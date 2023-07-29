@@ -1,9 +1,20 @@
 ---
 import Layout from "../layouts/Layout.astro"
+import Navbar from "../components/Navbar/index.astro"
 import Banner from "../components/Banner/index.astro"
+import Collections from "../components/Collections/index.astro"
+import Leftright from "../components/Leftright/index.astro"
+import Product from "../components/Product/index.astro"
+import Latestarticles from "../components/Latestarticles/index.astro"
+import Cardboxes from "../components/Cardboxes/index.astro"
 ---
 
 <Layout title="Banner">
-    
+    <Navbar />
     <Banner />
+    <Collections />
+    <Leftright />
+    <Product />
+    <Latestarticles />
+    <Cardboxes />
 </Layout>

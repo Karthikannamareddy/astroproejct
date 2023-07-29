@@ -1,0 +1,111 @@
+---
+import "./index.css"
+const Data = [
+  {
+    id: "1",
+    img:
+      "https://res.cloudinary.com/dtc5xqcmf/image/upload/v1689164619/61b2b92f81520b3c7e5d3fce_grey-t-shirt-product-apparel-x-webflow-template-p-500.jpeg_vfiidp.png",
+    icon: "far fa-heart",
+    cost: "10000",
+    heding: "Lorem ipsum dolor sit",
+    ratting: "4",
+    paragraph:
+      "Lorem ipsum dolor sit amet cons ead ipiscing elit eu etposue dolor sit."
+  },
+  {
+    id: "1",
+    img:
+      "https://res.cloudinary.com/dtc5xqcmf/image/upload/v1689165150/61b2b8e3a27d914770d6a09a_long-grey-sweater-product-apparel-x-webflow-template-p-500.jpeg_lxplxm.png",
+    icon: "far fa-heart",
+    cost: "10000",
+    heding: "Lorem ipsum dolor sit",
+    ratting: "4",
+    paragraph:
+      "Lorem ipsum dolor sit amet cons ead ipiscing elit eu etposue dolor sit."
+  },
+  {
+    id: "1",
+    img:
+      "https://res.cloudinary.com/dtc5xqcmf/image/upload/v1690436860/61b2b8e3a27d914770d6a09a_long-grey-sweater-product-apparel-x-webflow-template-p-500.jpeg_4_a8erwf.png",
+    icon: "far fa-heart",
+    cost: "10000",
+    heding: "Lorem ipsum dolor sit",
+    ratting: "4",
+    paragraph:
+      "Lorem ipsum dolor sit amet cons ead ipiscing elit eu etposue dolor sit."
+  },
+  {
+    id: "1",
+    img:
+      "https://res.cloudinary.com/dtc5xqcmf/image/upload/v1689165051/61b2b90b38c4eeee9875a8a3_pullover-grey-hoodie-product-apparel-x-webflow-template-p-500.jpeg_amjckk.png",
+    icon: "far fa-heart",
+    cost: "10000",
+    heding: "Lorem ipsum dolor sit",
+    ratting: "4",
+    paragraph:
+      "Lorem ipsum dolor sit amet cons ead ipiscing elit eu etposue dolor sit."
+  },
+  {
+    id: "1",
+    img:
+      "https://res.cloudinary.com/dtc5xqcmf/image/upload/v1689165299/61b2b82542a126948d754777_polo-grey-t-shirt-product-apparel-x-webflow-template-p-500.jpeg_qk6oxy.png",
+    icon: "far fa-heart",
+    cost: "10000",
+    heding: "Lorem ipsum dolor sit",
+    ratting: "4",
+    paragraph:
+      "Lorem ipsum dolor sit amet cons ead ipiscing elit eu etposue dolor sit."
+  },
+  {
+    id: "1",
+    img:
+      "https://res.cloudinary.com/dtc5xqcmf/image/upload/v1690438416/61b2b7a0c2d6951447c5f227_grey-sweater-v2-product-apparel-x-webflow-template-p-500.jpeg_1_hzuwem.png",
+    icon: "far fa-heart",
+    cost: "10000",
+    heding: "Lorem ipsum dolor sit",
+    ratting: "4",
+    paragraph:
+      "Lorem ipsum dolor sit amet cons ead ipiscing elit eu etposue dolor sit."
+  }
+]
+---
+
+
+<div class="main-div">
+  
+  <div class="sub-main-div">
+    <div class="card-text-full">
+      <div class="cart-imape-head-text">
+        <hr />
+
+        <p class="card-text">Latest collection</p>
+        <p class="cart-text-1">
+          Lorem ipsum dolor sit amet consectetur adipiscing elit eu et
+          posuere feugiat pellentesque curabitur purus
+        </p>
+        <button>All Products</button>
+      </div>
+    </div>
+
+    <div class="card">
+      {Data.map((x: any) => (
+        <div class="card-img-overlay">
+          <img src={x.img} class="card-image" />
+          <div class="centered">
+            <div class="heding-ratting">
+              <h3>{x?.heding}</h3>
+              <h3>
+                <span class="fa fa-star checked"></span>
+              </h3>
+            </div>
+            <p class="card-text-">{x.paragraph}</p>
+
+            <button class="add-to-card-button">ADD TO CART</button>
+          </div>
+        </div>
+      ))}
+       
+    </div>
+  </div>
+</div>
+     

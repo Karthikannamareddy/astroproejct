@@ -1,0 +1,54 @@
+.instagram-main-container {
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+}
+
+.instagram-text {
+    display: flex;
+    width:100%;
+    height: auto;
+    justify-content: center;
+    
+    
+}
+
+.instagram-text-hr {
+    width: 20%;
+    margin: 0px;
+    color:black;
+    background: var(--black, #000);
+}
+
+.instagram-text-follow {
+    color: var(--black, #000);
+    font-family: Inter;
+    font-size: 29px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 2.56px;
+    text-transform: uppercase;
+}
+
+.follow us-btn {
+    border: 1px solid var(--primary, #D85737);
+    background: var(--primary, #D85737);
+    color: var(--white, #FFF);
+    text-align: center;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+}
+.cards {
+    display:flex;
+    flex-direction: row;
+}
+.card-2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+   
+}
